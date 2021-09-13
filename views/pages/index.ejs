@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- para incluir coisas no html-->
+<%- include('../partials/head'); %>
+
+    
+    <body class="container">
+        <%- include('../partials/header'); %>
+                                        
+            <main>
+                <div class="sobrou">
+                    <h1>node com EJS</h1>
+                    <p>vamos aprender a trabalhar com arquivos EJS</p>
+                </div>
+                <ul>
+                    <% qualitys.forEach(function(quality){ %>
+                        <li>
+                            <strong>quality.title</strong>quality.message
+                        </li>
+                    }) %>
+                    
+                </ul>
+            </main>
+            <%- include('../partials/footer'); %>
+    </body>
+</html>
